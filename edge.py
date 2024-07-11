@@ -92,36 +92,48 @@ def save_grouped_text_to_file(grouped_text, output_text_path):
 # Main execution block
 if __name__ == "__main__":
     # Update these paths with your input and output paths
-    input_image_path = r'C:\Users\USER\Desktop\Dummy\EB-5.jpg'  # Path to the input image file
+    input_image_path = r'C:\Users\USER\Desktop\Dummy\KDK.jpg'  # Path to the input image file
     output_image_path = 'bounding_boxes_output.png'  # Path to save the output image with bounding boxes
     output_text_path = 'extracted_text.txt'  # Path to save the extracted text
     
     # Predefined bounding box coordinates
     bounding_boxes = [
-        (100, 100, 450, 50),  # Example bounding box 1: (x_min, y_min, width, height)
-        (130, 230, 220, 40),  # Example bounding box 2: (x_min, y_min, width, height)
-        (130, 300, 120, 40),  # Add more bounding boxes as needed
-        (130, 350, 560, 100), # Add more bounding boxes as needed
-        (130, 450, 665, 40),
-        (130, 500, 665, 40),
-        (850, 350, 670, 40),
-        (850, 400, 670, 40),
-        (850, 450, 670, 40),
-        (850, 500, 670, 30),
-        (850, 540, 670, 30),
-        (850, 590, 670, 30),
-        (850, 630, 670, 30),
-        (100, 730, 220, 40),
-        (100, 790, 1450, 100),
-        (100, 950, 220, 40),
-        (100, 1000, 1450, 100),
-        (100, 1150, 190, 40),
-        (100, 1200, 1450, 180),
-        (100, 1380, 1450, 50),
-        (100, 1440, 1450, 50),
-        (100, 1540, 140, 40),
-        (100, 1600, 1450, 120),
-        (100, 1700, 1480, 50),
+        (125, 170, 460, 40),  # Example bounding box 1: (x_min, y_min, width, height)
+        (125, 220, 810, 140),  # Example bounding box 1: (x_min, y_min, width, height)
+        (125, 360, 640, 35),  # Example bounding box 1: (x_min, y_min, width, height)
+        (125, 400, 650, 40),  # Example bounding box 1: (x_min, y_min, width, height)
+        (125, 440, 690, 45),  # Example bounding box 1: (x_min, y_min, width, height)
+        (125, 495, 690, 45),  # Example bounding box 1: (x_min, y_min, width, height)
+        (125, 560, 230, 45),  # Example bounding box 1: (x_min, y_min, width, height)
+        (125, 610, 840, 44),
+        (125, 660, 800, 185),
+        (125, 850, 700, 45),
+        (125, 900, 700, 45),
+        (1330, 155, 290, 90),
+        (1330, 250, 290, 60), #Delivery note
+        (1795, 155, 290, 90),
+        (1795, 250, 400, 90),
+        (1795, 340, 400, 80),
+        (1795, 440, 400, 80),
+        (1795, 530, 400, 80),
+        (1795, 620, 400, 80),
+        (1330, 615, 400, 80),
+        (1330, 535, 400, 80),
+        (1330, 440, 400, 80),
+        (1330, 350, 400, 80),
+        (1330, 715, 300, 150),
+        (170, 1030, 2100, 60),
+        (170, 1150, 2110, 60),
+        (170, 1250, 2110, 60),
+        (170, 1350, 2110, 60),
+        (170, 1440, 2110, 60),
+        (170, 1530, 2110, 60),
+        (125, 2500, 1110, 60),
+        (120, 3200, 950, 150),
+        (850, 3350, 590, 70),
+        (850, 3400, 590, 70),
+        
+       
     ]
     
     # Extract text and bounding boxes from the input image
